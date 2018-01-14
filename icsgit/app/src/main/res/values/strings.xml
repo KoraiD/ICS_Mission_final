@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Telekom Gömb</string>
+    <string name="title_activity_maps">Telekom Gömb MissionPrototype</string>
+    <string name="from_time">8:00</string>
+    <string name="to_time">22:00</string>
+    <string name="bar_title">Telekom Gömb</string>
+</resources>

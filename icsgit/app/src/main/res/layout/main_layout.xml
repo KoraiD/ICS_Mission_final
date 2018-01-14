@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/coordinator"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <!-- Include the AppBarLayout -->
+    <include layout="@layout/toolbar" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <!--app:layout_behavior="@string/appbar_scrolling_view_behavior"-->
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/maplayout"
+        android:orientation="vertical"
+        android:background="@color/colorAccent">
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="55dp"
+        android:orientation="horizontal"
+        android:background="@drawable/layout_bg"
+        android:layout_gravity="top"
+        android:id="@+id/csuszkasresz"
+        >
+    <Spinner
+        android:id="@+id/day_spinner"
+        android:layout_width="165dp"
+        android:layout_height="wrap_content" />
+
+     <TextView
+         android:layout_width="40dp"
+         android:layout_height="wrap_content"
+         android:text="@string/from_time"/>
+
+    <SeekBar
+        android:layout_width="165dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:id="@+id/timeseekbar">
+    </SeekBar>
+
+    <TextView
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:text="@string/to_time"
+        />
+    </LinearLayout>
+
+</RelativeLayout>
+</android.support.design.widget.CoordinatorLayout>
